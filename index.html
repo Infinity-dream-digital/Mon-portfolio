@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Alangba Yannis</title>
+  <!-- Polices Google Fonts : Plus Jakarta Sans (UI) & JetBrains Mono (Code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- OVERLAY SCAN BIOMÉTRIQUE HUD (30 SECONDS) -->
+<div id="biometric-loader" class="biometric-overlay">
+  <div class="hud-scanner-container">
+    
+    <!-- Reticule central rotatif -->
+    <div class="scanner-ring outer-ring"></div>
+    <div class="scanner-ring inner-ring"></div>
+    <div class="scanner-core"></div>
+    <div class="laser-beam"></div>
+
+    <!-- HUD Data Display -->
+    <div class="hud-status-box">
+      <div class="hud-header">
+        <span class="hud-led"></span>
+        <span class="hud-title">BIOMETRIC_IDENTITY_SCAN</span>
+      </div>
+      
+      <div class="hud-target-info">
+        TARGET_NODE: <span id="bio-target-name" class="highlight-cyan">SYS.UNKNOWN</span>
+      </div>
+
+      <!-- Barre de progression -->
+      <div class="bio-progress-bg">
+        <div id="bio-progress-bar" class="bio-progress-fill"></div>
+      </div>
+
+      <div class="hud-footer">
+        <span id="bio-status-text">ANALYZING RETINAL PATTERN...</span>
+        <span id="bio-timer" class="highlight-cyan">30.0s</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- NAV BAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-code">&lt;</span>Yannis Alangba<span class="logo-code">/&gt;</span>
+      </div>
+      <nav class="nav-links">
+        <!-- Navigation vide comme demandé -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+  <!-- Canvas pour la pluie de code binaire en arrière-plan -->
+  <canvas id="matrix-canvas"></canvas>
+  <!-- Fond dynamique avec grille lumineuse -->
+  <div class="grid-background"></div>
+
+  <div class="hero-container">
+    
+    <!-- CONTENU TEXTE HERO (COLONNE GAUCHE) -->
+    <div class="hero-content">
+
+      <h1 class="hero-title">
+        Développeur Web <br />
+        <span class="gradient-text">&amp; Interfaces Digitales</span>
+      </h1>
+
+      <p class="hero-description">
+        Je conçois et développe des applications web modernes, performantes et haut de gamme, axées sur l'expérience utilisateur.
+      </p>
+
+     <!-- CATEGORIES FUTURISTES : TERMINAL NODES -->
+<div class="hero-categories">
+  
+  <div class="category-node" onclick="triggerBiometricScan('SYS.ABOUT', 'about.html')">
+    <span class="node-prefix">[01]</span>
+    <span class="node-label">SYS.ABOUT</span>
+    <span class="node-dot"></span>
+  </div>
+
+  <div class="category-node" onclick="triggerBiometricScan('SYS.PROJECTS', 'projects.html')">
+    <span class="node-prefix">[02]</span>
+    <span class="node-label">SYS.PROJECTS</span>
+    <span class="node-dot"></span>
+  </div>
+
+  <div class="category-node" onclick="triggerBiometricScan('SYS.PRICING', 'pricing.html')">
+    <span class="node-prefix">[03]</span>
+    <span class="node-label">SYS.PRICING</span>
+    <span class="node-dot"></span>
+  </div>
+
+  <div class="category-node" onclick="triggerBiometricScan('SYS.CONTACT', 'contact.html')">
+    <span class="node-prefix">[04]</span>
+    <span class="node-label">SYS.CONTACT</span>
+    <span class="node-dot"></span>
+  </div>
+
+</div>
+
+    </div> <!-- FIN DU HERO-CONTENT -->
+
+    <!-- VISUEL / PHOTO HOLOGRAPHIQUE BLUEPRINT (COLONNE DROITE) -->
+    <div class="hero-visual">
+      <div class="blueprint-card">
+        <!-- 1. Photo de fond en Noir & Blanc / Blueprint -->
+        <img src="./WhatsApp Image 2026-09-19 at 15.34.25.jpeg" alt="Alangba Yannis" class="blueprint-photo photo-bw" />
+
+        <!-- 2. Photo du dessus en Couleur (révélée par le scanner) -->
+        <img src="./WhatsApp Image 2026-09-20 at 23.21.51.jpg" alt="Alangba Yannis" class="blueprint-photo photo-color" />
+
+        <!-- 3. Ligne du scanner néon -->
+        <div class="scan-line"></div>
+        
+        <div class="blueprint-overlay"></div>
+        
+        <!-- Badges HUD -->
+        <div class="hud-tag top-left">DEV_ID // YANNIS ALANGBA</div>
+        <div class="hud-tag bottom-right">SYS.ONLINE</div>
+      </div>
+    </div>
+
+  </div> <!-- FIN DU HERO-CONTAINER -->
+</section>
+ 
+
+  <!-- Inclure le script JS juste avant </body> -->
+<script src="script.js"></script>
+</body>
+</html>

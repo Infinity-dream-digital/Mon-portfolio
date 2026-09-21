@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alangba Yannis // SYS.PRICING</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="cyber-page">
+
+  <!-- FOND DYNAMIQUE (MATRICE + GRILLE) -->
+  <canvas id="matrix-canvas"></canvas>
+  <div class="grid-background"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="navbar">
+    <div class="nav-logo">
+      <span class="logo-dot"></span>
+      <span class="logo-text">YANNIS.DEV</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-item">// HOME</a>
+      <a href="about.html" class="nav-item">[01] ABOUT</a>
+      <a href="projects.html" class="nav-item">[02] PROJECTS</a>
+      <a href="pricing.html" class="nav-item active">[03] PRICING</a>
+      <a href="contact.html" class="nav-item">[04] CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="page-container">
+    
+    <!-- EN-TÊTE DE PAGE -->
+    <div class="page-header">
+      <div class="hud-badge">SYS.NODE // 03_PRICING</div>
+      <h1 class="page-title">GRILLE DES <span class="gradient-text">TARIFS</span></h1>
+      <p class="page-subtitle">> LOADING_SERVICE_TIERS... ACCESS_GRANTED</p>
+    </div>
+
+    <!-- GRILLE DES TARIFS -->
+    <div class="pricing-grid">
+      
+      <!-- OFFRE 1 : ESSENTIEL / VITRINE -->
+      <article class="cyber-card pricing-card">
+        <div class="card-tag">// TIER_01</div>
+        <div class="pricing-header">
+          <h2 class="pricing-title">Site Vitrine</h2>
+          <p class="pricing-subtitle">Idéal pour présenter une activité ou un service avec impact visual.</p>
+        </div>
+
+        <div class="pricing-price">
+          <span class="price-value">Sur Devis</span>
+        </div>
+
+        <ul class="pricing-features">
+          <li><span class="feature-icon">[✓]</span> Design Responsive & Inclusif</li>
+          <li><span class="feature-icon">[✓]</span> Intégration HTML5 / CSS3 / JS</li>
+          <li><span class="feature-icon">[✓]</span> Formulaire de contact / Commande</li>
+          <li><span class="feature-icon">[✓]</span> Optimisation Vitesse & SEO</li>
+          <li><span class="feature-icon">[✓]</span> Hébergement GitHub Pages / Vercel</li>
+        </ul>
+
+        <div class="pricing-footer">
+          <a href="contact.html" class="cyber-btn-sm outline full-width">COMMANDER_NODE &rarr;</a>
+        </div>
+      </article>
+
+      <!-- OFFRE 2 : INTERACTIF / DYNAMIQUE (POPULAIRE) -->
+      <article class="cyber-card pricing-card featured">
+        <div class="featured-badge">RECOMMENDED</div>
+        <div class="card-tag">// TIER_02</div>
+        <div class="pricing-header">
+          <h2 class="pricing-title">Site e-commerce</h2>
+          <p class="pricing-subtitle">Pour les projets nécessitant de la dynamique de données et un panel admin.</p>
+        </div>
+
+        <div class="pricing-price">
+          <span class="price-value">Sur Devis</span>
+        </div>
+
+        <ul class="pricing-features">
+          <li><span class="feature-icon">[✓]</span> Tout l'offre Site Vitrine</li>
+          <li><span class="feature-icon">[✓]</span> Base de données Firebase temps réel</li>
+          <li><span class="feature-icon">[✓]</span> Panel Administration / Gestion</li>
+          <li><span class="feature-icon">[✓]</span> Modales d'images & réservations</li>
+          <li><span class="feature-icon">[✓]</span> Notifications d'activité automatiques</li>
+        </ul>
+
+        <div class="pricing-footer">
+          <a href="contact.html" class="cyber-btn-sm full-width">COMMANDER_NODE &rarr;</a>
+        </div>
+      </article>
+
+      
+
+    </div>
+
+    <!-- PANNEAU DE NAVIGATION BAS DE PAGE -->
+    <div class="navigation-panel">
+      <div class="panel-header">// NAVIGATION_NODES</div>
+      <div class="nav-buttons-grid">
+        <a href="index.html" class="cyber-btn">
+          <span>[00] ACCUEIL</span>
+        </a>
+        <a href="about.html" class="cyber-btn">
+          <span>[01] ABOUT</span>
+        </a>
+        <a href="projects.html" class="cyber-btn">
+          <span>[02] PROJETS</span>
+        </a>
+        <a href="contact.html" class="cyber-btn primary">
+          <span>[04] CONTACT</span>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

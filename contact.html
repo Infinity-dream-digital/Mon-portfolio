@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alangba Yannis // SYS.CONTACT</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="cyber-page">
+
+  <!-- FOND DYNAMIQUE (MATRICE + GRILLE) -->
+  <canvas id="matrix-canvas"></canvas>
+  <div class="grid-background"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="navbar">
+    <div class="nav-logo">
+      <span class="logo-dot"></span>
+      <span class="logo-text">YANNIS.DEV</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-item">// HOME</a>
+      <a href="about.html" class="nav-item">[01] ABOUT</a>
+      <a href="projects.html" class="nav-item">[02] PROJECTS</a>
+      <a href="pricing.html" class="nav-item">[03] PRICING</a>
+      <a href="contact.html" class="nav-item active">[04] CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="page-container">
+    
+    <!-- EN-TÊTE DE PAGE -->
+    <div class="page-header">
+      <div class="hud-badge">SYS.NODE // 04_CONTACT</div>
+      <h1 class="page-title">ME <span class="gradient-text">CONTACTER</span></h1>
+      <p class="page-subtitle">> ESTABLISHING_ENCRYPTED_COMMS... ACCESS_GRANTED</p>
+    </div>
+
+    <!-- GRILLE CONTACT -->
+    <div class="contact-grid">
+      
+      <!-- CANAUX DE COMMUNICATION DIRECTS -->
+      <div class="cyber-card contact-info-card">
+        <div class="card-tag">// DIRECT_CHANNELS</div>
+        <h2 class="card-title">Initialiser un projet ?</h2>
+        <p class="card-text">
+          Disponible pour échanger sur vos projets web, applications ou besoins sur-mesure. Contactez-moi directement via le canal de votre choix.
+        </p>
+
+        <!-- BOUTON WHATSAPP STAR -->
+        <div class="whatsapp-box">
+          <span class="whatsapp-label">// FAST_RESPONSE_CHANNEL</span>
+          <a href="https://wa.me/2250102002898?text=Bonjour%20Yannis,%20j'ai%20vu%20ton%20portfolio%20et%20je%20souhaite%20discuter%20d'un%20projet." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="cyber-whatsapp-btn">
+            <span class="wa-icon">💬</span>
+            <span class="wa-text">CONTACTER SUR WHATSAPP</span>
+            <span class="wa-number">+225 01 02 00 28 98</span>
+          </a>
+        </div>
+
+        <!-- INFOS COMPLÉMENTAIRES -->
+        <div class="info-list">
+          <div class="info-item">
+            <span class="info-label">LOCALISATION:</span>
+            <span class="info-val">Abidjan, Côte d'Ivoire</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">DISPONIBILITÉ:</span>
+            <span class="info-val green">FREELANCE / OPEN FOR ROLES</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">STATUS:</span>
+            <span class="info-val">ONLINE // READY_TO_CODE</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMULAIRE DE CONTACT HUD -->
+      <div class="cyber-card contact-form-card">
+        <div class="card-tag">// TRANSMIT_MESSAGE</div>
+        
+        <form class="cyber-form" onsubmit="event.preventDefault(); alert('Message transmis au système !');">
+          <div class="form-group">
+            <label for="name" class="form-label">[01] VOTRE NOM / ORGANISATION</label>
+            <input type="text" id="name" class="cyber-input" placeholder="Ex: John Doe / Agency" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">[02] ADRESSE E-MAIL</label>
+            <input type="email" id="email" class="cyber-input" placeholder="Ex: client@domain.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">[03] DÉTAILS DU PROJET</label>
+            <textarea id="message" class="cyber-input textarea" rows="4" placeholder="Décrivez brièvement votre besoin..." required></textarea>
+          </div>
+
+          <button type="submit" class="cyber-btn primary full-width">
+            <span>TRANSMETTRE LE MESSAGE &rarr;</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- PANNEAU DE NAVIGATION BAS DE PAGE -->
+    <div class="navigation-panel">
+      <div class="panel-header">// NAVIGATION_NODES</div>
+      <div class="nav-buttons-grid">
+        <a href="index.html" class="cyber-btn">
+          <span>[00] ACCUEIL</span>
+        </a>
+        <a href="about.html" class="cyber-btn">
+          <span>[01] ABOUT</span>
+        </a>
+        <a href="projects.html" class="cyber-btn">
+          <span>[02] PROJETS</span>
+        </a>
+        <a href="pricing.html" class="cyber-btn">
+          <span>[03] TARIFS</span>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

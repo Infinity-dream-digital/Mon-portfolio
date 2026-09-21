@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alangba Yannis // SYS.ABOUT</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="cyber-page">
+
+  <!-- FOND DYNAMIQUE (MATRICE + GRILLE) -->
+  <canvas id="matrix-canvas"></canvas>
+  <div class="grid-background"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="navbar">
+    <div class="nav-logo">
+      <span class="logo-dot"></span>
+      <span class="logo-text">YANNIS.DEV</span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-item">// HOME</a>
+      <a href="about.html" class="nav-item active">[01] ABOUT</a>
+      <a href="projects.html" class="nav-item">[02] PROJECTS</a>
+      <a href="pricing.html" class="nav-item">[03] PRICING</a>
+      <a href="contact.html" class="nav-item">[04] CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="page-container">
+    
+    <!-- EN-TÊTE DE PAGE -->
+    <div class="page-header">
+      <div class="hud-badge">SYS.NODE // 01_ABOUT</div>
+      <h1 class="page-title">À PROPOS <span class="gradient-text">DE MOI</span></h1>
+      <p class="page-subtitle">> INITIALIZING_AUTODIDACT_PROFILE... ACCESS_GRANTED</p>
+    </div>
+
+    <!-- BANNIÈRE PHOTO TRANPORTÉE PAR DRONE -->
+<section class="drone-banner-container">
+  <div class="drone-wrapper" id="droneWrapper">
+    
+    <!-- LE DRONE (HUD & HELICES) -->
+    <div class="cyber-drone">
+      <div class="drone-propeller prop-left"></div>
+      <div class="drone-core">
+        <span class="drone-eye"></span>
+      </div>
+      <div class="drone-propeller prop-right"></div>
+      <!-- Grappins/Lois de fixation -->
+      <div class="drone-mount left-mount"></div>
+      <div class="drone-mount right-mount"></div>
+    </div>
+
+    <!-- LA PANCARTE / CARTE PHOTO -->
+    <div class="photo-sign cyber-card">
+      <div class="card-tag">// PILOT_PROFILE_IMG</div>
+      <div class="sign-photo-frame">
+        <img src="./WhatsApp Image 2026-09-20 at 23.04.14.jpg" alt="Photo Alangba Yannis" class="sign-img" />
+        <div class="photo-overlay"></div>
+        <span class="hud-corner top-left"></span>
+        <span class="hud-corner top-right"></span>
+        <span class="hud-corner bottom-left"></span>
+        <span class="hud-corner bottom-right"></span>
+      </div>
+      <div class="sign-caption">
+        <span class="caption-name">YANNIS ALANGBA</span>
+        <span class="caption-status">[DEV_NODE // ONLINE]</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- GRILLE D'INFORMATIONS -->
+    <div class="about-grid">
+      
+      <!-- CARTE PROFIL & PARCOURS AUTODIDACTE -->
+      <div class="cyber-card bio-card">
+        <div class="card-corner top-left"></div>
+        <div class="card-corner bottom-right"></div>
+        
+        <div class="card-tag">// USER_DOSSIER</div>
+        <h2 class="card-title">Alangba Yannis</h2>
+        <p class="card-subtitle">Développeur Web Autodidacte & Titulaire d'une Licence en Mécatronique</p>
+
+        <p class="card-text">
+          Passionné par la création numérique et le code, je suis un développeur frontend autodidacte. Mon approche est guidée par la curiosité, la résolution de problèmes et l'apprentissage continu.
+        </p>
+        <p class="card-text">
+          Titulaire d'une Licence en Mécatronique, j'associe la rigueur logique et l'esprit d'ingénierie acquis durant ma formation académique à ma passion pour la conception d'interfaces web modernes, immersives et performantes.
+        </p>
+
+        <!-- STATISTIQUES RAPIDES -->
+        <div class="stats-row">
+          <div class="stat-item">
+            <span class="stat-number">MÉCATRONIQUE</span>
+            <span class="stat-desc">DIPLÔME / LICENCE</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">AUTODIDACTE</span>
+            <span class="stat-desc">FORMATION WEB</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">ABIDJAN</span>
+            <span class="stat-desc">LOCALISATION</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARTE COMPÉTENCES / MAÎTRISE TECHNIQUE -->
+      <div class="cyber-card tech-card">
+        <div class="card-corner top-left"></div>
+        <div class="card-corner bottom-right"></div>
+
+        <div class="card-tag">// CORE_COMPETENCIES</div>
+        
+        <div class="stack-category">
+          <span class="category-label">MAÎTRISE CORE WEB</span>
+          <div class="skills-tags">
+            <span class="tech-tag highlight">HTML5</span>
+            <span class="tech-tag highlight">CSS3</span>
+            <span class="tech-tag highlight">JavaScript (ES6+)</span>
+          </div>
+        </div>
+
+        <div class="stack-category">
+          <span class="category-label">DISCIPLINES ACADÉMIQUES & SYSTÈMES</span>
+          <div class="skills-tags">
+            <span class="tech-tag">Mécatronique</span>
+            <span class="tech-tag">Systèmes Automatisés</span>
+            <span class="tech-tag">Logique Algorithmique</span>
+          </div>
+        </div>
+
+        <div class="stack-category">
+          <span class="category-label">OUTILS & ENVIRONNEMENT</span>
+          <div class="skills-tags">
+            <span class="tech-tag">Git / GitHub</span>
+            <span class="tech-tag">VS Code</span>
+            <span class="tech-tag">Responsive Design</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BLOC CV & ACTION RECRUTEURS -->
+<div class="cyber-card cv-download-card">
+  <div class="card-tag">// CURRICULUM_VITAE</div>
+  
+  <div class="cv-info-content">
+    <div class="cv-icon">📄</div>
+    <div class="cv-details">
+      <h3 class="cv-title">ALANGBA YANNIS - CV.PDF</h3>
+      <p class="cv-subtitle">Développeur Frontend Junior // Licence en Mécatronique</p>
+    </div>
+  </div>
+
+  <div class="cv-actions">
+    <!-- Bouton pour voir / ouvrir le PDF -->
+    <a href="./Cv Yannis Alangba.pdf" target="_blank" class="cyber-btn outline">
+      <span> VOIR LE CV</span>
+    </a>
+    
+    <!-- Bouton pour télécharger directement le PDF -->
+    <a href="./Cv Yannis Alangba.pdf" download="CV_Alangba_Yannis.pdf" class="cyber-btn primary">
+      <span>TÉLÉCHARGER (.PDF)</span>
+    </a>
+  </div>
+</div>
+
+    <!-- PANNEAU DE NAVIGATION VERS LES AUTRES PAGES -->
+    <div class="navigation-panel">
+      <div class="panel-header">// NAVIGATION_NODES</div>
+      <div class="nav-buttons-grid">
+        <a href="index.html" class="cyber-btn">
+          <span>[00] ACCUEIL</span>
+          <div class="btn-glow"></div>
+        </a>
+        <a href="projects.html" class="cyber-btn primary">
+          <span>[02] PROJETS</span>
+          <div class="btn-glow"></div>
+        </a>
+        <a href="pricing.html" class="cyber-btn">
+          <span>[03] TARIFS</span>
+          <div class="btn-glow"></div>
+        </a>
+        <a href="contact.html" class="cyber-btn">
+          <span>[04] CONTACT</span>
+          <div class="btn-glow"></div>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
