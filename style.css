@@ -818,37 +818,48 @@ body {
 }
 
 /* ==========================================================================
-   FIX RESPONSIVE MOBILE - ALIGNEMENT DES CARTES (ABOUT)
+   CORRECTION DE NATIVE LARGEUR MOBILE (PAGE ABOUT)
    ========================================================================== */
 @media (max-width: 768px) {
-  /* 1. S'assurer que le conteneur principal conserve un rembourrage égal à gauche et à droite */
-  .page-container {
-    padding-left: 1.25rem !important;
-    padding-right: 1.25rem !important;
-    width: 100%;
-    box-sizing: border-box;
+
+  /* 1. Empêcher tout débordement horizontal sur le body et le conteneur */
+  html, body, .page-container {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 
-  /* 2. Repasser la grille d'About en 1 seule colonne propre sans débordement */
+  /* 2. Repasser la grille en colonne unique centrée */
   .about-grid {
     display: flex !important;
     flex-direction: column !important;
+    align-items: center !important; /* Centre les cartes */
     width: 100% !important;
     gap: 1.5rem !important;
   }
 
-  /* 3. Sécuriser la largeur des cartes de la page About */
-  .about-grid .cyber-card {
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important; /* Empeche le padding de pousser la carte vers la droite */
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  /* 3. Réduction de la largeur des 2 cartes (Bio & Tech) */
+  .about-grid .cyber-card,
+  .bio-card,
+  .tech-card {
+    width: 90% !important;        /* Réduit la largeur pour garder une marge d'air */
+    max-width: 90% !important;
+    margin: 0 auto !important;     /* Centre la carte horizontalement */
+    padding: 1.2rem !important;    /* Ajuste le padding interne */
+    box-sizing: border-box !important;
   }
 
-  /* 4. Ajuster le rembourrage interne des cartes sur petit écran si besoin */
-  .bio-card, .tech-card {
-    padding: 1.25rem !important;
+  /* 4. Gestion des éléments internes pour éviter qu'ils pousse la carte */
+  .bio-card *, .tech-card * {
+    max-width: 100% !important;
+    word-break: break-word !important; /* Casse les mots trop longs si nécessaire */
+    box-sizing: border-box !important;
+  }
+
+  /* 5. Adapter la grille de stats pour qu'elle ne déborde pas */
+  .stats-row {
+    grid-template-columns: 1fr !important; /* Passe les stats en 1 seule colonne */
+    gap: 0.8rem !important;
   }
 }
 
