@@ -818,6 +818,41 @@ body {
 }
 
 /* ==========================================================================
+   FIX RESPONSIVE MOBILE - ALIGNEMENT DES CARTES (ABOUT)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* 1. S'assurer que le conteneur principal conserve un rembourrage égal à gauche et à droite */
+  .page-container {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* 2. Repasser la grille d'About en 1 seule colonne propre sans débordement */
+  .about-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 1.5rem !important;
+  }
+
+  /* 3. Sécuriser la largeur des cartes de la page About */
+  .about-grid .cyber-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important; /* Empeche le padding de pousser la carte vers la droite */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* 4. Ajuster le rembourrage interne des cartes sur petit écran si besoin */
+  .bio-card, .tech-card {
+    padding: 1.25rem !important;
+  }
+}
+
+/* ==========================================================================
    PANNEAU DE NAVIGATION (BAS DE PAGE)
    ========================================================================== */
 .navigation-panel {
